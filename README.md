@@ -24,3 +24,4 @@ notificationSystem.ShowNotification(new Notification("Second one", 1f)); // Will
 
 # Notes:
 - There should only be 1 child of the GameObject that contains the NotificationSystem.cs script.
+- There is an example scene located at the Example folder of the plugin.
