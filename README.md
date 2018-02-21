@@ -9,7 +9,18 @@ Display notifications to the player's screen in seconds!
 5) Done!
 
 # How to use:
-
+- Reference the NotificationSystem.cs script from your desired manager script.
+- Now you are ready to start showing notifications:
+```CSharp
+// The first parameter is the text of the notification and the second one is the time before it disappears.
+notificationSystem.ShowNotification(new Notification("I am a notification!", 2f));
+```
+- You can show 2 or more consecutive notifications:
+```CSharp
+// The first parameter is the text of the notification and the second one is the time before it disappears.
+notificationSystem.ShowNotification(new Notification("First one", 2f));
+notificationSystem.ShowNotification(new Notification("Second one", 1f)); // Will show 2 seconds after the first starts.
+```
 
 # Notes:
 - There should only be 1 child of the GameObject that contains the NotificationSystem.cs script.
